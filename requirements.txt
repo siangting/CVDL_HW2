@@ -1,0 +1,8 @@
+# python==3.10
+matplotlib==3.8.0
+pyqt5==5.15.11
+PyQt5_sip==12.15.0
+torch==2.2.2
+torchvision==0.17.2
+torchsummary==1.5.1
+opencv-contrib-python==4.10.0.84
