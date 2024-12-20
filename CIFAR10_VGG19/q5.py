@@ -40,8 +40,8 @@ def showModelStructure():
 
 
 def showModelAccLoss():
-    lossPath = "./5_3_loss_1.png"
-    accPath = "./5_3_acc_1.png"
+    lossPath = "./results/loss_curve_120.png"
+    accPath = "./results/accuracy_curve_120.png"
     lossImage = cv2.imread(lossPath)
     accImage = cv2.imread(accPath)
     concatedImage = np.concatenate((lossImage, accImage), axis=0)
