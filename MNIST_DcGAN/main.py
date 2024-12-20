@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 from inference import run_inference
+from show_training_images import show_training_images
 
 
 class MainWindow(QMainWindow):
@@ -46,7 +47,13 @@ class MainWindow(QMainWindow):
         self.central_widget.setLayout(layout)
 
         # 綁定按鈕事件
+        self.show_training_images_button.clicked.connect(self.on_show_training_images_click)
         self.inference_button.clicked.connect(self.on_inference_click)
+
+
+    def on_show_training_images_click(self):
+        """按下顯示圖片按鈕時執行"""
+        show_training_images(data_root="../Q2_images/data/mnist")
 
     def on_inference_click(self):
         """按下推論按鈕時執行"""
